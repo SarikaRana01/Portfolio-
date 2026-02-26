@@ -1,0 +1,34 @@
+{% block content %}
+<p style="font-size: 1.2rem;margin-top: 20px;margin-left: 20px;">
+   username<span style="margin-right: 40px;margin-left:40px;text-decoration: underline;"> {{user.username}} </span>
+   fName<span style="margin-right: 40px;margin-left :40px;text-decoration: underline;">{{user.First_name}} </span> 
+   LName <span style="margin-right:40px;margin-left:40px;text-decoration: underline;">{{user.last_name}} </span>
+   email <span style="margin-right:4px;margin-left: 40px;text-decoration: underline;">{{user.email}} </span>
+   <hr style="border: 2px solid black;"><hr style="border: 2px solid black;">
+   <br>
+   <button class="btn btn-primary"><a href="{% url 'address'  %}">Add address</a></button>
+   <br>
+   {% for i in addr %}
+   <br>
+  &nbsp;&nbsp;&nbsp;&nbsp; state <span style="margin-right:40px;margin-left:40px;text-decoration: underline;font-size: 1.3rem;"> {{i.state}} </span>
+    distt <span style="margin-right:40px;margin-left:40px;text-decoration: underline;font-size: 1.3rem;"> {{i.distt}} </span>
+    city <span style="margin-right:40px;margin-left:40px;text-decoration: underline;font-size: 1.3rem;"> {{i.city}} </span>
+    pin <span style="margin-right:40px;margin-left:40px;text-decoration: underline;font-size: 1.3rem;"> {{i.pincode}} </span> <br>4
+    <button class="btn btn-primary"><a href="{% url 'Edit_addr' i.id %}">Edit</a></button>
+   <button class="btn btn-warning"><a href="{% url 'Delete_addr' i.id %}">Delete</a></button>
+    {% endfor %}
+    <hr>
+    <br>
+    <hr style="border: 2px solid black;"><hr style="border: 2px solid black;">
+    <button class="btn btn-primary"><a href="{% url 'phone' %}">Add phone no</a></button>
+    <br>
+    {% for i in phn %}
+    <br>
+   <span style="margin-left:30px;font-size: 1.3rem;">phn &nbsp;&nbsp;&nbsp; {{i.phone}} </span><br>
+   <button class="btn btn-primary"><a href="{% url 'Edit_no' i.id %}">Edit</a></button>
+   <button class="btn btn-warning"><a href="{% url 'Delete_no' i.id %}">Delete</a></button>
+    {% endfor %}
+    <hr>
+</p>
+
+{% endblock content %}
