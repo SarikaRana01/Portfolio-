@@ -1,9 +1,9 @@
-##**Sarika Rana – Personal Portfolio**
+## **Sarika Rana – Personal Portfolio**
 About This Project
 
 This is my personal portfolio website built using HTML, CSS, and JavaScript.
 
-##**I used a base template structure and customized it according to my requirements by:**
+## **I used a base template structure and customized it according to my requirements by:**
 
 1.Modifying HTML structure
 
@@ -23,7 +23,7 @@ The final result reflects my design sense and frontend development skills.
 
  https://sarikarana01.github.io/Portfolio-/
 
-##**Technologies Used**
+## **Technologies Used**
 
 1.HTML5
 
@@ -45,7 +45,7 @@ The final result reflects my design sense and frontend development skills.
 
 5.Projects Showcase
 
-##**Screenshots**
+## **Screenshots**
 
 ![ProMan](images/screenshot1.png)
 
@@ -53,7 +53,7 @@ The final result reflects my design sense and frontend development skills.
 
 ![ProMan](images/screenshot3.png)
 
-##**How to Run Locally**
+## **How to Run Locally**
 
 ```bash git clone https://github.com/SarikaRana01/Portfolio-.git
 cd Portfolio-
