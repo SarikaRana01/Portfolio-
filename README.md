@@ -47,11 +47,11 @@ The final result reflects my design sense and frontend development skills.
 
 ## **Screenshots**
 
-![ProMan](images/screenshot1.png)
+![Home Screenshot](img/screenshot1.png)
 
-![ProMan](images/screenshot2.png)
+![Home Screenshot](img/screenshot2.png)
 
-![ProMan](images/screenshot3.png)
+![Home Screenshot](img/screenshot3.png)
 
 ## **How to Run Locally**
 
